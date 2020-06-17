@@ -31,7 +31,7 @@ class WordVectors:
             
     def get_word_vector(self, word):
         if isinstance(word, str):
-            vector = nlp(word).vector
+            vector = self.nlp(word).vector
             if self.unk_word == 'raise_error' and not np.any(vector):
                     raise TypeError(f'The word {word} is not in the vocabulary, change attributes unk_word to None to ignore the error. A zero vector will be returned for unkown words')    
             return vector
