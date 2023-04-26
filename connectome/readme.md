@@ -1,0 +1,1 @@
+The py files run the reservoir on 50 repetitions of the metusalem task with a given subject connectome and bundle.  In the control version, an additional argument is used to say whether we should remove an equivalent number of connections (with respect to th specified bundle).
